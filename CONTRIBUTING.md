@@ -12,8 +12,6 @@ Getting Started
 
 ## Configure local workstation for Terraform’s AzureRM provider, targeting an Azure subscription.
 
-----------
-
 
 For each quickstart template:
 -------------
@@ -21,28 +19,28 @@ For each quickstart template:
 ## Create a branch resembling the name of the relevant azure quickstart template:
 
 > **For example:**
-- **101-vm-simple-linux**, or
-- **topic/101-vm-simple-linux** or
-- **feature/101-vm-simple-linux**,
-- etc.
+>- **101-vm-simple-linux**, or
+>- **topic/101-vm-simple-linux** or
+>- **feature/101-vm-simple-linux**,
+>- etc.
 
 ## Setup our workspace:
 
 > Update the .gitignore in the root terraform directory to exclude the .terraform directory and its contents.
 
 > Within the examples folder, create a new directory resembling the naming convention of existing Terraform examples:
-- **azure-vm-simple-linux**,
-- etc.
+> - **azure-vm-simple-linux**,
+> - etc.
 
 ## Navigate to this directory.
 
 ## Each workspace will likely contain the following notable files:
 
 > **README.md** – leverage relevant portions of the existing README.md from the quickstart repository, add additional notes that specifically apply to this Terraform configuration
-**main.tf **– this is generally understood to be the main entry point to your Terraform configuration
-**outputs.tf** – this will contain information received from the APIs/providers to display to the user/operator from the applied configuration
-**variables.tf** – these define parameters that extend the configurations capabilities
-**.travis.yml** – this defines the CI build/deploy steps for travis-ci.org
+> **main.tf** – this is generally understood to be the main entry point to your Terraform configuration
+> **outputs.tf** – this will contain information received from the APIs/providers to display to the user/operator from the applied configuration
+> **variables.tf** – these define parameters that extend the configurations capabilities
+> **.travis.yml** – this defines the CI build/deploy steps for travis-ci.org
 
 ## Implement the core resources from the quickstart template
 
