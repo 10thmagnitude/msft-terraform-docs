@@ -7,8 +7,8 @@ Getting Started
 
 ## Create Azure SPN:
 > See:
-- https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli
-- https://github.com/Azure/azure-devops-utils/blob/master/bash/create-service-principal.sh
+> - https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli
+> - https://github.com/Azure/azure-devops-utils/blob/master/bash/create-service-principal.sh
 
 ## Configure local workstation for Terraform’s AzureRM provider, targeting an Azure subscription.
 
@@ -47,12 +47,12 @@ For each quickstart template:
 Core should go into the main.tf, outputs that should reside in outputs.tf, and adding parameters to the variables.tf.
 
 > - Each template will start with an azurerm_resource_group resource as the container for the template’s resources
-- **armviz.io** - is a good resource to visualize an ARM template, some quickstart templates will have a visualize button, but you can also load any ARM template
-- the existing **azuredeploy.json** file will identify parameters, outputs, etc. which should generally map to outputs/variables/etc.
-*Try to maintain variable names where possible*
-- Certain resources in the azurerm provider can offer some flexibility, for example:
--- Use **azurerm_virtual_network** and **azurerm_subnet** resources, or
--- Use **azurerm_virtual_network** has its own subnet properties
+> - **armviz.io** - is a good resource to visualize an ARM template, some quickstart templates will have a visualize button, but you can also load any ARM template
+> - the existing **azuredeploy.json** file will identify parameters, outputs, etc. which should generally map to outputs/variables/etc.
+> *Try to maintain variable names where possible*
+> - Certain resources in the azurerm provider can offer some flexibility, for example:
+> -- Use **azurerm_virtual_network** and **azurerm_subnet** resources, or
+> -- Use **azurerm_virtual_network** has its own subnet properties
 
 ## These templates are not tracking any state, or long-lived infrastructure, so we can ignore the .terraform folder in our .gitignore
 ## Commit early, commit often
