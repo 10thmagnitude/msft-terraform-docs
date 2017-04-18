@@ -37,10 +37,10 @@ For each quickstart template:
 ## Each workspace will likely contain the following notable files:
 
 > **README.md** – leverage relevant portions of the existing README.md from the quickstart repository, add additional notes that specifically apply to this Terraform configuration
-> **main.tf** – this is generally understood to be the main entry point to your Terraform configuration
-> **outputs.tf** – this will contain information received from the APIs/providers to display to the user/operator from the applied configuration
-> **variables.tf** – these define parameters that extend the configurations capabilities
-> **.travis.yml** – this defines the CI build/deploy steps for travis-ci.org
+> - **main.tf** – this is generally understood to be the main entry point to your Terraform configuration
+> - **outputs.tf** – this will contain information received from the APIs/providers to display to the user/operator from the applied configuration
+> - **variables.tf** – these define parameters that extend the configurations capabilities
+> - **.travis.yml** – this defines the CI build/deploy steps for travis-ci.org
 
 ## Implement the core resources from the quickstart template
 
