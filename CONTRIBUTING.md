@@ -5,12 +5,12 @@ Getting Started
 ## Clone repository:
 > https://github.com/harijayms/terraform
 
-##Create Azure SPN:
+## Create Azure SPN:
 > See:
 - https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli
 - https://github.com/Azure/azure-devops-utils/blob/master/bash/create-service-principal.sh
 
-##Configure local workstation for Terraform’s AzureRM provider, targeting an Azure subscription.
+## Configure local workstation for Terraform’s AzureRM provider, targeting an Azure subscription.
 
 ----------
 
@@ -18,7 +18,7 @@ Getting Started
 For each quickstart template:
 -------------
 
-##Create a branch resembling the name of the relevant azure quickstart template:
+## Create a branch resembling the name of the relevant azure quickstart template:
 
 > **For example:**
 - **101-vm-simple-linux**, or
@@ -26,7 +26,7 @@ For each quickstart template:
 - **feature/101-vm-simple-linux**,
 - etc.
 
-##Setup our workspace:
+## Setup our workspace:
 
 > Update the .gitignore in the root terraform directory to exclude the .terraform directory and its contents.
 
@@ -34,9 +34,9 @@ For each quickstart template:
 - **azure-vm-simple-linux**,
 - etc.
 
-##Navigate to this directory.
+## Navigate to this directory.
 
-##Each workspace will likely contain the following notable files:
+## Each workspace will likely contain the following notable files:
 
 > **README.md** – leverage relevant portions of the existing README.md from the quickstart repository, add additional notes that specifically apply to this Terraform configuration
 **main.tf **– this is generally understood to be the main entry point to your Terraform configuration
@@ -44,7 +44,7 @@ For each quickstart template:
 **variables.tf** – these define parameters that extend the configurations capabilities
 **.travis.yml** – this defines the CI build/deploy steps for travis-ci.org
 
-##Implement the core resources from the quickstart template
+## Implement the core resources from the quickstart template
 
 Core should go into the main.tf, outputs that should reside in outputs.tf, and adding parameters to the variables.tf.
 
@@ -56,6 +56,6 @@ Core should go into the main.tf, outputs that should reside in outputs.tf, and a
 -- Use **azurerm_virtual_network** and **azurerm_subnet** resources, or
 -- Use **azurerm_virtual_network** has its own subnet properties
 
-##These templates are not tracking any state, or long-lived infrastructure, so we can ignore the .terraform folder in our .gitignore
-##Commit early, commit often
-##Submit PRs to contribute back into master, tagging relevant reviewers
+## These templates are not tracking any state, or long-lived infrastructure, so we can ignore the .terraform folder in our .gitignore
+## Commit early, commit often
+## Submit PRs to contribute back into master, tagging relevant reviewers
