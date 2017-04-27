@@ -10,19 +10,18 @@ Getting Started
 > - https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli
 > - https://github.com/Azure/azure-devops-utils/blob/master/bash/create-service-principal.sh
 
+
+
 ## Configure local workstation for Terraform’s AzureRM provider, targeting an Azure subscription.
 
 
 For each quickstart template:
 -------------
 
-## Create a branch resembling the name of the relevant azure quickstart template:
+## Create a branch resembling the name of the relevant azure quickstart template, prefixed with **topic-**:
 
 > **For example:**
->- **101-vm-simple-linux**, or
->- **topic/101-vm-simple-linux** or
->- **feature/101-vm-simple-linux**,
->- etc.
+>- **topic-101-vm-simple-linux**
 
 ## Setup our workspace:
 
@@ -40,7 +39,8 @@ For each quickstart template:
 > - **main.tf** – this is generally understood to be the main entry point to your Terraform configuration
 > - **outputs.tf** – this will contain information received from the APIs/providers to display to the user/operator from the applied configuration
 > - **variables.tf** – these define parameters that extend the configurations capabilities
-> - **.travis.yml** – this defines the CI build/deploy steps for travis-ci.org
+> - **deploy.ci.sh** - script consumed by travis-ci for CI
+> - **deploy.mac.sh** - wrapper around deploy.ci.sh for testing on your local workstation (tested on macOS 10.12.4)
 
 ## Implement the core resources from the quickstart template
 
@@ -57,3 +57,5 @@ Core should go into the main.tf, outputs that should reside in outputs.tf, and a
 ## These templates are not tracking any state, or long-lived infrastructure, so we can ignore the .terraform folder in our .gitignore
 ## Commit early, commit often
 ## Submit PRs to contribute back into master, tagging relevant reviewers
+## Continuous Integration with travis-ci
+> - **See CI.md**
