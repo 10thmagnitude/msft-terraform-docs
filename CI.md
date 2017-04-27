@@ -7,12 +7,12 @@ Getting Started w/ Continuous Integration for Terraform Examples
 Travis-CI is a build (and deployment) orchestration SaaS tool.
 
 ## Why Travis-CI?
-- Cost - Free for open-source projects
-- Ease of use
-- Extensibility
-- Key Features:
--- Management interface for sensitive environment variables
--- Multiple builds are capable of being executed in parallel with isolation by source branch, and directory
+Cost - Free for open-source projects
+Ease of use
+Extensibility
+Key Features:
+- Management interface for sensitive environment variables
+- Multiple builds are capable of being executed in parallel with isolation by source branch, and directory
 
 ### Travis-CI basics:
 Travis-CI provides us a set of pipeline steps that are configurable.
@@ -57,15 +57,15 @@ For example, the following will tell Travis-CI to kick off a job for each TEST_D
 ```
 
 ### What is our pipeline's process at a high level?
-- Spin up a linux build agent in GCE
-- Pull source (git clone/checkout)
-- Setup env variables from repository settings
-- Setup env variables from .travis.yml
-- build/deploy/test/destroy
--- `terraform get`
--- `terraform validate`
--- `terraform plan`
--- `terraform apply`
--- *Any additional testing via Azure CLI, etc.*
--- `terraform destroy`
-- Tear down linux build agent
+Spin up a linux build agent in GCE
+Pull source (git clone/checkout)
+Setup env variables from repository settings
+Setup env variables from .travis.yml
+build/deploy/test/destroy
+- `terraform get`
+- `terraform validate`
+- `terraform plan`
+- `terraform apply`
+- *Any additional testing via Azure CLI, etc.*
+- `terraform destroy`
+Tear down linux build agent
