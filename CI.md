@@ -1,7 +1,7 @@
 Getting Started w/ Continuous Integration for Terraform Examples
 ===================
 
-*CI is handled via Travis-CI (link to travis-ci.org here).*
+**CI is handled via Travis-CI:  https://travis-ci.org/harijayms/terraform/branches.**
 
 ## About Travis-CI
 Travis-CI is a build (and deployment) orchestration SaaS tool.
