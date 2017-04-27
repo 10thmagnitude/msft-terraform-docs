@@ -35,12 +35,12 @@ Within the examples folder, create a new directory resembling the naming convent
 
 ## Each workspace will likely contain the following notable files:
 
-> **README.md** – leverage relevant portions of the existing README.md from the quickstart repository, add additional notes that specifically apply to this Terraform configuration
-> - **main.tf** – this is generally understood to be the main entry point to your Terraform configuration
-> - **outputs.tf** – this will contain information received from the APIs/providers to display to the user/operator from the applied configuration
-> - **variables.tf** – these define parameters that extend the configurations capabilities
-> - **deploy.ci.sh** - script consumed by travis-ci for CI
-> - **deploy.mac.sh** - wrapper around deploy.ci.sh for testing on your local workstation (tested on macOS 10.12.4)
+ **README.md** – leverage relevant portions of the existing README.md from the quickstart repository, add additional notes that specifically apply to this Terraform configuration
+ - **main.tf** – this is generally understood to be the main entry point to your Terraform configuration
+ - **outputs.tf** – this will contain information received from the APIs/providers to display to the user/operator from the applied configuration
+ - **variables.tf** – these define parameters that extend the configurations capabilities
+ - **deploy.ci.sh** - script consumed by travis-ci for CI
+ - **deploy.mac.sh** - wrapper around deploy.ci.sh for testing on your local workstation (tested on macOS 10.12.4)
 
 ## Implement the core resources from the quickstart template
 
