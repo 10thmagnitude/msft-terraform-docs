@@ -1,0 +1,19 @@
+# BLOCKED ITEMS
+
+## [201-vmss-ubuntu-autoscale](https://github.com/harijayms/terraform/tree/topic-201-vmss-ubuntu-autoscale/examples/azure-vmss-ubuntu-autoscale)
+Blocker:
+The AQS ARM requires that you create Auto Scale Settings, and there is currently not a resource for this within Terraform. 
+- There is currently a [feature request](https://github.com/hashicorp/terraform/issues/12889) for Auto Scale Settings. 
+- https://github.com/harijayms/terraform/tree/topic-201-vmss-ubuntu-autoscale
+
+The current example that is committed to this [topic branch](https://github.com/harijayms/terraform/tree/topic-201-vmss-ubuntu-autoscale/examples/azure-vmss-ubuntu-autoscale) provisions everything else that this ARM requires but leaves the auto-scaling commented out.
+
+A template was created in its place that leaves out the auto-scaling and is called [azure-vmss-ubuntu](https://github.com/hashicorp/terraform/pull/15290), and it is currently in Hashicorp PR review.
+
+## [201-web-app-redis-cache-sql-database](https://github.com/harijayms/terraform/tree/topic-201-web-app-redis-cache-sql-database/examples/azure-web-app-redis-cache-sql-database)
+This template is blocked by two resources that Terraform currently lacks:
+1. Web/sites
+2. Web/serverfarms
+
+There is currently a [feature request](https://github.com/hashicorp/terraform/pull/12001) that is in progress for these resources, but no progress has been made on it in about a month.
+
