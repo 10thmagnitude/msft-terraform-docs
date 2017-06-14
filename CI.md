@@ -93,7 +93,7 @@ This CI process depends on a resource group in your subscription called `permane
 |permanent-vnet   | permanent       | southcentralus | Microsoft.Network/virtualNetworks   |
 |tfpermstor       | permanent       | southcentralus | Microsoft.Storage/storageAccounts   |
 
-_It is strongly suggested that you add locks to prevent these resources from being destroyed. For example: 
+It is strongly suggested that you [add locks](https://docs.microsoft.com/en-us/cli/azure/lock#create) to prevent these resources from being destroyed. For example:
 
 ```
 az lock create --name lockImage1ForCI --lock-type CanNotDelete -g permanent --resource-type Microsoft.Compute/images --resource-name LinuxImage
