@@ -17,3 +17,6 @@ This template is blocked by two resources that Terraform currently lacks:
 
 There is currently a [feature request](https://github.com/hashicorp/terraform/pull/12001) that is in progress for these resources, but no progress has been made on it in about a month.
 
+# CI CLEANUP
+
+After the final two templates get pulled into Hashicorp's master (openshift and vmss), then I will submit one final pull request to Hashicorp to clean up some of our deploy scripts with new environment variables and other misc clean up. These changes do not affect whether the templates will work or not, only whether they work properly in the Travis CI that we have set up in your subscription. 
