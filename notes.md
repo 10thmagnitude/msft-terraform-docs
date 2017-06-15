@@ -20,3 +20,5 @@ There is currently a [feature request](https://github.com/hashicorp/terraform/pu
 # CI CLEANUP
 
 After the final two templates get pulled into Hashicorp's master (openshift and vmss), then I will submit one final pull request to Hashicorp to clean up some of our deploy scripts with new environment variables and other misc clean up. These changes do not affect whether the templates will work or not, only whether they work properly in the Travis CI that we have set up in your subscription. 
+
+> Edited to add: Now that all of the example templates are merged into Hashicorp's master branch, I have submitted a final PR for the `hashicorp-ci-updates` branch. The branch that will be left on Hari's fork is called `topic-ci-updates`, and it contains the latest and most accurate version of the `.travis.yml`. [![Build Status](https://travis-ci.org/harijayms/terraform.svg?branch=topic-ci-updates)](https://travis-ci.org/harijayms/terraform)
